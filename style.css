@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(rgba(8, 5, 30, 0.5), rgba(5, 5, 30, 0.5)),
+    url(image/University-of-Cambridge.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/*NAVBAR START */
+nav {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+nav div ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+nav div ul li {
+  margin: 10px;
+}
+
+nav div ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+}
+
+nav div ul li a::after {
+  content: " ";
+  background-color: red;
+  display: block;
+  width: 0;
+  height: 3px;
+  margin-top: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav div ul li a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+#boxicons {
+  visibility: hidden;
+}
+
+.bx {
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.bx:hover {
+  font-size: 35px;
+  transition: 0.3s;
+}
+
+.bx-menu {
+  display: none;
+}
+
+/*NAVBAR END */
+
+/*TEXT START */
+
+.text-box {
+  position: absolute;
+  width: 80%;
+  color: white;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-box h1 {
+  font-size: 60px;
+  padding-bottom: 15px;
+}
+
+.text-box p {
+  margin: 10px;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+.hero-btn {
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 12px 34px;
+  color: white;
+  transition: 0.5s;
+  display: inline-block;
+}
+
+.hero-btn:hover {
+  background-color: red;
+}
+
+/*TEXT END */
+
+/*COURSE-COL START */
+
+.align-container {
+  width: 80%;
+  margin: auto;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.row {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-item {
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+}
+
+section h1 {
+  font-size: 35px;
+}
+
+section p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 10px;
+}
+
+section h3 {
+  margin: 10px 0;
+}
+
+.course-col {
+  background-color: antiquewhite;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 10px gray;
+  transition: 0.3s;
+}
+
+/*SECTION COURSE-COL START */
+
+/*CAMPUS START */
+
+.campus-col {
+  padding: 0;
+  position: relative;
+}
+
+.campus-col img {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.layer:hover {
+  background-color: rgba(230, 118, 6, 0.5);
+  transition: 0.3s;
+}
+
+.layer h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  opacity: 0;
+}
+
+.layer:hover h3 {
+  bottom: 50%;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+/*CAMPUS END */
+
+/* FACILITIES   START*/
+
+.facilities-col {
+  text-align: left;
+  padding: 0;
+}
+
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facilities-col p {
+  margin: 16px 0;
+}
+
+/* FACILITIES   END*/
+
+/* TESTEMONIALS START  */
+.testemonials-col {
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  background-color: antiquewhite;
+}
+.testemonials-col img {
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 30px;
+}
+
+.testemonials-col p {
+  padding: 0;
+}
+
+.testemonials-col i {
+  margin: 0;
+  color: red;
+}
+
+.testemonials-col h2 {
+  margin-top: 15px;
+}
+
+/* TESTEMONIALS END  */
+
+/* UA  START*/
+.ua {
+  background: linear-gradient(rgba(8, 5, 30, 0.5), rgba(5, 5, 30, 0.5)),
+    url(image/saatkulesi1.jpg);
+  background-size: cover;
+  position: relative;
+  padding: 100px 0;
+  color: white;
+  border-radius: 10px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.ua h1 {
+  margin-bottom: 40px;
+  padding: 0;
+}
+/* UA  END*/
+/* FOOTER START */
+footer {
+  padding: 30px 0;
+}
+footer h1 {
+  margin: 25px 0;
+}
+
+footer .icons i {
+  color: red;
+  margin: 10px;
+  cursor: pointer;
+  padding: 20px 10px;
+}
+
+footer .bx {
+  color: red;
+
+  margin: 0;
+}
+/* FOOTER END */
+
+@media (max-width: 675px) {
+  .nav-links {
+    display: none;
+  }
+
+  #boxicons {
+    visibility: visible;
+  }
+
+  .text-box h1 {
+    font-size: 30px;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .ua h1 {
+    font-size: 25px;
+  }
+}
